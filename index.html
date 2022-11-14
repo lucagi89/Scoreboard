@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Wallpoet&display=swap" rel="stylesheet">
+    <title>Scoreboard</title>
+</head>
+
+    <body>
+        <div class="container">
+            <div>
+                <h3 id="home">HOME</h3>
+                <div id="home-score"></div>
+                <div class="btns-container">
+                    <button class="btn" id="one" onclick="homeOne()">+1</button>
+                    <button class="btn" id="two" onclick="homeTwo()">+2</button>
+                    <button class="btn" id="three" onclick="homeThree()">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3 id="guest">AWAY</h3>
+                <div id="guest-score"></div>
+                <div class="btns-container">
+                    <button class="btn" id="one" onclick="guestOne()" >+1</button>
+                    <button class="btn" id="two" onclick="guestTwo()">+2</button>
+                    <button class="btn" id="three" onclick="guestThree()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button class="btn-game" id="newmatch-btn" onclick="newMatch()">START NEW MATCH</button>
+        <script src="index.js"></script>
+    </body>
+
+</html>
